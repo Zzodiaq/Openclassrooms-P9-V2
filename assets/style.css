@@ -1,0 +1,533 @@
+body {
+	max-width: 1920px;
+	margin: auto;
+}
+* {
+	font-family: 'Inter';
+	font-style: normal;
+}
+.top-header {
+	background-color: white;
+	position: sticky;
+	top:0;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	padding-inline: 100px;
+	padding-block: 30px;
+	align-items: center;
+}
+
+.top-header .name {
+	font-size: 26px;
+}
+
+.nav ul {
+	display: flex;
+	list-style-type: none;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+.nav li {
+	padding-inline: 10px;
+}
+
+.nav a {
+	text-decoration: none;
+	color: #000
+}
+
+.social-link img {
+	width: 20px;
+}
+
+#about {
+	display: flex;
+	background-color: #F6D2B8;
+	padding-inline: 100px;
+	padding-block: 100px;
+	position: relative;
+}
+
+.picture.left::before {
+	/* content: ' '; */
+	background-color: #E5975F;
+	width: 374px;
+	height: 329px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.picture {
+	flex: 1;
+	margin: 0 20px;
+	z-index: 0;
+}
+
+.picture img {
+	width: 100%;
+
+}
+#about-me {
+	flex: 2
+}
+.about-me__title {
+	margin-top: 1em;
+	margin-bottom: 60px;
+	font-size: 30px;
+}
+.about-me__introduction {
+	font-family: 'Spectral';
+	font-weight: 800;
+	font-style: italic;
+	width: 60%;
+}
+#about-me p {
+	width: 80%;
+	font-size: 14px;
+}
+
+#gallery {
+	/*	min-height: 100vh; */
+}
+.title{
+	text-align: center;
+	padding-block: 2em;
+}
+.gallery .nav {
+	justify-content: center;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	color: #fff;
+	background-color: #BEB45A;
+	border-radius:0 ;
+}
+.nav-pills .nav-link {
+	color: #000
+}
+.item-column {
+	position: relative;
+	margin-bottom: 0 !important;
+	padding: 0;
+}
+.item-column::after{
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+
+}
+.gallery-item {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	padding: .5em;
+}
+.mg-prev, .mg-next {
+	width: 30px;
+	height: 30px;
+	border-radius: 00%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	font-size: 24px;
+}
+
+.quote {
+	font-family: 'Spectral';
+	font-style: italic;
+	width: 70%;
+	margin: auto;
+	padding-block: 3em;
+}
+.quote__text {
+	font-family: Spectral;
+	font-style: italic;
+	font-weight: 300;
+
+}
+.quote__author {
+	font-family: Spectral;
+	font-weight: 800;
+	font-size: 22px;
+}
+
+#services {
+	margin: auto;
+	background-color: #A8D5D8 ;
+	position: relative;
+}
+#services .container::before{
+	content: ' ';
+	background-color: #1C6474;
+	position: absolute;
+	width: 100%;
+	height: 30%;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+}
+
+#services .container {
+	justify-content: space-between;
+	display: flex;
+	padding : 2em 0;
+
+}
+
+.service {
+	background-color: white;
+	max-width: 390px;
+	width: 30%;
+	height: 337px;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	z-index: 1;
+}
+
+#contact {
+	margin: auto;
+	background-color: #D8D3A8 ;
+	position: relative;
+	padding-inline: 100px;
+	padding-block: 100px;
+}
+
+#contact .container {
+	display: flex;
+}
+.picture.right::before {
+	content: ' ';
+	background-color: #BEB45A;
+	width: 374px;
+	height: 329px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+.form-container {
+	flex : 2;
+
+}
+form {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	align-items: flex-start;
+}
+
+form input {
+	width: 100%;
+	background-color: transparent;
+	border: solid 1px;
+	height: 2.5em;
+	margin-bottom: 20px;
+}
+
+form textarea {
+	width: 100%;
+	background-color: transparent;
+	border: solid 1px;
+	height: 5em;
+	line-height: 2.5em;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+}
+input[type="submit"] {
+	background-color: #BEB45A;
+	padding: .5em 1em
+}
+
+@media all and (min-width: 1181px) {
+	.carousel-item:nth-child(1) img {
+		content: url('./images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp');
+	  }
+	.carousel-item:nth-child(2) img {
+		content: url('./images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp');
+	}
+	.carousel-item:nth-child(3) img {
+		content: url('./images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp');
+	}
+	/* .left img {
+		content: url('./images/nina/nina-small.webp');
+	} */
+
+	.right img {
+		content: url('./images/camera/camera.webp');
+	}
+
+	.a {
+		content: url('./images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp');
+	  }
+	.b {
+		content: url('./images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp');
+	}
+	.c {
+		content: url('./images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp');
+	}
+	.d {
+		content: url('./images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp');
+	  }
+	.e {
+		content: url('./images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp');
+	}
+	.f {
+		content: url('./images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp');
+	}
+	.g {
+		content: url('./images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp');
+	  }
+	.h {
+		content: url('./images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp');
+	}
+	.i {
+		content: url('./images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp');
+	}
+
+}
+
+
+
+@media all and (max-width: 1180px) {
+	  .carousel-item:nth-child(1) img {
+		content: url('./images/slider/1180/ryoji-iwata-wUZjnOv7t0g-unsplash-large.webp');
+	  }
+	  .carousel-item:nth-child(2) img {
+		content: url('./images/slider/1180/nicholas-green-nPz8akkUmDI-unsplash-large.webp');
+	  }
+	  .carousel-item:nth-child(3) img {
+		content: url('./images/slider/1180/edward-cisneros-3_h6-1NPDGw-unsplash-large.webp');
+	  }
+	  /* .left img {
+		content: url('./images/nina/nina-small.webp');
+	  } */
+	  .right img {
+		content: url('./images/camera/1180/camera-large.webp');
+	}
+
+	  .a {
+		content: url('./images/gallery/concerts/1180/aaron-paul-wnX-fXzB6Cw-unsplash-large.webp');
+	  }
+	.b {
+		content: url('./images/gallery/entreprise/1180/ali-morshedlou-WMD64tMfc4k-unsplash-large.webp');
+	}
+	.c {
+		content: url('./images/gallery/entreprise/1180/jason-goodman-tHO1_OuKbg0-unsplash-large.webp');
+	}
+	.d {
+		content: url('./images/gallery/mariage/1180/hannah-busing-RvF2R_qMpRk-unsplash-large.webp');
+	  }
+	.e {
+		content: url('./images/gallery/portraits/1180/ade-tunji-rVkhWWZFAtQ-unsplash-large.webp');
+	}
+	.f{
+		content: url('./images/gallery/mariage/1180/jakob-owens-SiniLJkXhMc-unsplash-large.webp');
+	}
+	.g {
+		content: url('./images/gallery/portraits/1180/nino-van-prattenburg\ -\ 443cl1uR_8-unsplash-large.webp');
+	  }
+	.h {
+		content: url('./images/gallery/concerts/1180/austin-neill-hgO1wFPXl3I-unsplash-large.webp');
+	}
+	.i {
+		content: url('./images/gallery/entreprise/1180/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-large.webp');
+	}
+	.picture {
+		flex : 2;
+	}
+	#about, #contact .container {
+		align-items: center;
+	}
+	.about-me__title {
+		margin-top: 0;
+		margin-bottom: 1em;
+	}
+	#about-me h6, #about-me p {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 1000px) {
+	.carousel-item:nth-child(1) img {
+		content: url('./images/slider/1000/ryoji-iwata-wUZjnOv7t0g-unsplash-medium.webp');
+	  }
+	  .carousel-item:nth-child(2) img {
+		content: url('./images/slider/1000/nicholas-green-nPz8akkUmDI-unsplash-medium.webp');
+	  }
+	  .carousel-item:nth-child(3) img {
+		content: url('./images/slider/1000/edward-cisneros-3_h6-1NPDGw-unsplash-medium.webp');
+	  }
+	  .left img {
+		content: url('./images/nina/nina-medium.webp');
+	  }
+	  .a {
+		content: url('./images/gallery/concerts/1000/aaron-paul-wnX-fXzB6Cw-unsplash-medium.webp');
+	  }
+	.b {
+		content: url('./images/gallery/entreprise/1000/ali-morshedlou-WMD64tMfc4k-unsplash-medium.webp');
+	}
+	.c {
+		content: url('./images/gallery/entreprise/1000/jason-goodman-tHO1_OuKbg0-unsplash-medium.webp');
+	}
+	.d {
+		content: url('./images/gallery/mariage/1000/hannah-busing-RvF2R_qMpRk-unsplash-medium.webp');
+	  }
+	.e {
+		content: url('./images/gallery/portraits/1000/ade-tunji-rVkhWWZFAtQ-unsplash-medium.webp');
+	}
+	.f{
+		content: url('./images/gallery/mariage/1000/jakob-owens-SiniLJkXhMc-unsplash-medium.webp');
+	}
+	.g{
+		content: url('./images/gallery/portraits/1000/nino-van-prattenburg\ -\ 443cl1uR_8-unsplash-medium.webp');
+	  }
+	.h {
+		content: url('./images/gallery/concerts/1000/austin-neill-hgO1wFPXl3I-unsplash-medium.webp');
+	}
+	.i{
+		content: url('./images/gallery/entreprise/1000/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-medium.webp');
+	}
+	.right img {
+		content: url('./images/camera/1000/camera-medium.webp');
+	}
+	#about{
+		flex-direction: column;
+
+	}
+	.picture {
+		width: 50%;
+	}
+	.picture.left::before {
+		width: 100%;
+		height: 30%;
+		position: absolute;
+		bottom: auto;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+	.about-me__title{
+		text-align: center;
+		margin-top: 1em;
+	}
+	#services .container {
+		flex-direction: column;
+	}
+	.service {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		margin: 2em 0
+	}
+	.service__description{
+		margin-bottom: 1em;
+	}
+
+	#services .container::before{
+		width: 30%;
+		height: 100%;
+		bottom: 0;
+		right: 0;
+		left: auto;
+		z-index: 0;
+	}
+
+	#contact .container {
+		flex-direction: column;
+	}
+	#contact .picture.right {
+		margin-top: 1em;
+	}
+	.picture.right::before {
+		width: 100%;
+		height: 30%;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: -1;
+	}
+}
+
+@media all and (max-width: 650px) {
+	.carousel-item:nth-child(1) img {
+		content: url('./images/slider/650/ryoji-iwata-wUZjnOv7t0g-unsplash-small.webp');
+	  }
+	.carousel-item:nth-child(2) img {
+	content: url('./images/slider/650/nicholas-green-nPz8akkUmDI-unsplash-small.webp');
+	}
+	.carousel-item:nth-child(3) img {
+	content: url('./images/slider/650/edward-cisneros-3_h6-1NPDGw-unsplash-small.webp');
+	}
+	.left img {
+		content: url('./images/nina/nina-small.webp');
+	}
+	.a {
+		content: url('./images/gallery/concerts/650/aaron-paul-wnX-fXzB6Cw-unsplash-small.webp');
+	  }
+	.b {
+		content: url('./images/gallery/entreprise/650/ali-morshedlou-WMD64tMfc4k-unsplash-small.webp');
+	}
+	.c {
+		content: url('./images/gallery/entreprise/650/jason-goodman-tHO1_OuKbg0-unsplash-small.webp');
+	}
+	.d {
+		content: url('./images/gallery/mariage/650/hannah-busing-RvF2R_qMpRk-unsplash-small.webp');
+	  }
+	.e {
+		content: url('./images/gallery/portraits/650/ade-tunji-rVkhWWZFAtQ-unsplash-small.webp');
+	}
+	.f {
+		content: url('./images/gallery/mariage/650/jakob-owens-SiniLJkXhMc-unsplash-small.webp');
+	}
+	.g {
+		content: url('./images/gallery/portraits/650/nino-van-prattenburg\ -\ 443cl1uR_8-unsplash-small.webp');
+	  }
+	.h {
+		content: url('./images/gallery/concerts/650/austin-neill-hgO1wFPXl3I-unsplash-small.webp');
+	}
+	.i {
+		content: url('./images/gallery/entreprise/650/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-small.webp');
+	}
+	.right img {
+		content: url('./images/camera/650/camera-small.webp');
+	}
+	.top-header {
+		flex-direction: column;
+		padding-inline: 0;
+	}
+	.top-header .nav, .top-header .nav ul {
+		width: 100%;
+		padding: 0 0 0 0;
+	}
+	.top-header .nav li {
+		flex: 1;
+		padding-block: 1em;
+		text-align: center;
+	}
+	.picture.left::before, .picture.right::before {
+		height: 150px;
+	}
+	#services .container {
+		align-items: center;
+	}
+	.service {
+		max-width: 90%;
+	}
+	#about, #contact {
+		padding-inline: 2em;
+		padding-block: 2em;
+	}
+	form {
+		width: 100%;
+	}
+	.picture {
+		width: 80%;
+	}
+}
+
